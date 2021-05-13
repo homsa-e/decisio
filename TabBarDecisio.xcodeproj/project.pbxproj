@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,8 @@
 		3619B00B2636A6E600903DA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3619B0092636A6E600903DA8 /* Main.storyboard */; };
 		3619B00D2636A6E800903DA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3619B00C2636A6E800903DA8 /* Assets.xcassets */; };
 		3619B0102636A6E800903DA8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3619B00E2636A6E800903DA8 /* LaunchScreen.storyboard */; };
+		3619B01F2636DED900903DA8 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3619B01E2636DED900903DA8 /* FeedViewController.swift */; };
+		C2A687E35AAF8DB3DE979ADC /* Pods_TabBarDecisio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F9E955584287AE2DEF672DC /* Pods_TabBarDecisio.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,10 @@
 		3619B00C2636A6E800903DA8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3619B00F2636A6E800903DA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3619B0112636A6E800903DA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3619B01E2636DED900903DA8 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		4F9E955584287AE2DEF672DC /* Pods_TabBarDecisio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TabBarDecisio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		88BA14165449811845A964B5 /* Pods-TabBarDecisio.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TabBarDecisio.debug.xcconfig"; path = "Target Support Files/Pods-TabBarDecisio/Pods-TabBarDecisio.debug.xcconfig"; sourceTree = "<group>"; };
+		B67A634A52EEAC9B8A562AD3 /* Pods-TabBarDecisio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TabBarDecisio.release.xcconfig"; path = "Target Support Files/Pods-TabBarDecisio/Pods-TabBarDecisio.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2A687E35AAF8DB3DE979ADC /* Pods_TabBarDecisio.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +49,8 @@
 			children = (
 				3619B0022636A6E600903DA8 /* TabBarDecisio */,
 				3619B0012636A6E600903DA8 /* Products */,
+				AC76A560F2424E3859DF7845 /* Pods */,
+				7AEE156752989E102FC2F0C5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +72,26 @@
 				3619B00C2636A6E800903DA8 /* Assets.xcassets */,
 				3619B00E2636A6E800903DA8 /* LaunchScreen.storyboard */,
 				3619B0112636A6E800903DA8 /* Info.plist */,
+				3619B01E2636DED900903DA8 /* FeedViewController.swift */,
 			);
 			path = TabBarDecisio;
+			sourceTree = "<group>";
+		};
+		7AEE156752989E102FC2F0C5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4F9E955584287AE2DEF672DC /* Pods_TabBarDecisio.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AC76A560F2424E3859DF7845 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				88BA14165449811845A964B5 /* Pods-TabBarDecisio.debug.xcconfig */,
+				B67A634A52EEAC9B8A562AD3 /* Pods-TabBarDecisio.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3619B0142636A6E800903DA8 /* Build configuration list for PBXNativeTarget "TabBarDecisio" */;
 			buildPhases = (
+				95A178C26CE95CD745E92F7C /* [CP] Check Pods Manifest.lock */,
 				3619AFFC2636A6E600903DA8 /* Sources */,
 				3619AFFD2636A6E600903DA8 /* Frameworks */,
 				3619AFFE2636A6E600903DA8 /* Resources */,
+				458F7309B35B5D1E7A998149 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +161,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		458F7309B35B5D1E7A998149 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TabBarDecisio/Pods-TabBarDecisio-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TabBarDecisio/Pods-TabBarDecisio-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TabBarDecisio/Pods-TabBarDecisio-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		95A178C26CE95CD745E92F7C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TabBarDecisio-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3619AFFC2636A6E600903DA8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -139,6 +210,7 @@
 			files = (
 				3619B0082636A6E600903DA8 /* ViewController.swift in Sources */,
 				3619B0042636A6E600903DA8 /* AppDelegate.swift in Sources */,
+				3619B01F2636DED900903DA8 /* FeedViewController.swift in Sources */,
 				3619B0062636A6E600903DA8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +355,7 @@
 		};
 		3619B0152636A6E800903DA8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88BA14165449811845A964B5 /* Pods-TabBarDecisio.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +375,7 @@
 		};
 		3619B0162636A6E800903DA8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B67A634A52EEAC9B8A562AD3 /* Pods-TabBarDecisio.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

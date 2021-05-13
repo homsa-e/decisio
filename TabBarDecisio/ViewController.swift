@@ -6,14 +6,16 @@
 //
 
 import UIKit
+import PinLayout
 
 class ViewController: UIViewController {
-
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        view.backgroundColor = .cyan
+        
     }
-
-
+    override func viewDidLayoutSubviews() {
+        
+    }
 }
 

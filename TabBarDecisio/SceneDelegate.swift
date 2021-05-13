@@ -13,9 +13,28 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
-        // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
-        // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
+        let TBController = UITabBarController()
+        
+        let feedVC = FeedViewController()
+        let vc2 = UIViewController()
+        let vc3 = UIViewController()
+        let appearance = UITabBarItem.appearance()
+        appearance.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.gray,
+                                           NSAttributedString.Key.font: UIFont.systemFont(ofSize: 13, weight: .bold),
+                                           NSAttributedString.Key.baselineOffset: UIOffset(horizontal: 10, vertical: 10)],
+                                          for: .normal)
+        appearance.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.systemBlue], for: .selected)
+        vc2.view.backgroundColor = .blue
+        vc3.view.backgroundColor = .green
+        vc2.tabBarItem.title = "Мои споры"
+        vc3.tabBarItem.title = "Профиль"
+        vc2.tabBarItem.image = UIImage(systemName: "hand.draw")
+        vc3.tabBarItem.image = UIImage(systemName: "person.crop.circle")
+        TBController.viewControllers = [vc2, feedVC, vc3]
+        TBController.selectedIndex = 1
+        TBController.tabBar.backgroundColor = .gray
+        TBController.tabBar.tintColor = .systemBlue
+        window?.rootViewController = TBController
         guard let _ = (scene as? UIWindowScene) else { return }
     }
 
